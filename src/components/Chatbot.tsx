@@ -15,7 +15,8 @@ interface Props {
 }
 
 // API URL - change this to match your FastAPI server location
-const API_URL = "http://localhost:8000";
+//const API_URL = "http://localhost:8000"; old where not able to push!
+const API_URL = "http://192.168.1.100:8000"; // newly Changed
 
 export default function ChatbotFullscreen({ isEnglish, onClose }: Props) {
   const [messages, setMessages] = useState<ChatMessage[]>([
